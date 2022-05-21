@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Purdue Kappa Kappa Psi</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="static/stylesheet.css">
         <link rel="icon" href="static/favicon.ico">
         <link rel="import" href="templates/test.html">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 
     <body>
-        <div id="container"></div>
-        <script>
-            var link = document.querySelector('link[rel="import"]');
+        <div id="content">
 
-            // Clone the <template> in the import.
-            var template = link.import.querySelector('template');
-            var clone = document.importNode(template.content, true);
-
-            document.querySelector('#container').appendChild(clone);
-        </script>
+        </div>
     </body>
+
+    <script type="text/javascript">
+        
+        $(function (){
+            $("#content").load("templates/test.html");
+        });
     
+       console.log($("#content"));
+            
+    </script>
+
 </html>
