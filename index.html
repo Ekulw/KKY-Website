@@ -5,10 +5,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="../static/stylesheet.css">
-        <link rel="icon" href="../static/favicon.ico">
+        <link rel="stylesheet" href="static/stylesheet.css">
+        <link rel="icon" href="static/favicon.ico">
+        <link rel="import" href="templates/test.html">
     </head>
+
     <body>
-        <p>Test</p>
+        
     </body>
+
+    <script>
+        var content = document.querySelector('link[rel="import"]').import;
+        console.log(content)
+        document.body.innerHTML = content;
+    </script>
 </html>

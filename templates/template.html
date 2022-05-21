@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Purdue Kappa Kappa Psi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="static/stylesheet.css">
+        <link rel="icon" href="static/favicon.ico">
+    </head>
+    <body>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top navbar" id="nav-big">
+            <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+                <a href="{{ url_for('index') }}" class="w3-bar-item w3-button w3-mobile"><b style="color: #09268a">Purdue Kappa Kappa Psi</b></a>
+                <div class="w3-right w3-small">
+                    <a href="{{ url_for('history') }}" class="w3-bar-item w3-button w3-mobile">History</a>
+                    <a href="{{ url_for('family_tree') }}" class="w3-bar-item w3-button w3-mobile">Family Tree</a>
+                    <a href="{{ url_for('chapter_leadership') }}" class="w3-bar-item w3-button w3-mobile">Chapter Leadership</a>
+                    <a href="{{ url_for('life_and_honorary') }}" class="w3-bar-item w3-button w3-mobile">Life and Honorary Members</a>
+                    <a href="{{ url_for('calendar') }}" class="w3-bar-item w3-button w3-mobile">Calendar</a>
+                    <a href="{{ url_for('alumni') }}" class="w3-bar-item w3-button w3-mobile">Alumni</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-top navbar" id="nav-small">
+            <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+                <a href="{{ url_for('index') }}" class="w3-bar-item w3-button"><b style="color: #09268a">Purdue Kappa Kappa Psi</b></a>
+                <div class="w3-right w3-small w3-dropdown-hover">
+                    <img src="../static/images/menu.png" class="w3-button w3-right" style="height:38.5px">
+                    <div class="w3-dropdown-content w3-white" style="right:0; width:30%">
+                    <a href="{{ url_for('history') }}" class="w3-button" style="width:100%">History</a>
+                    <a href="{{ url_for('family_tree') }}" class="w3-button" style="width:100%">Family Tree</a>
+                    <a href="{{ url_for('chapter_leadership') }}" class="w3-button" style="width:100%">Chapter Leadership</a>
+                    <a href="{{ url_for('life_and_honorary') }}" class="w3-button" style="width:100%">Life and Honorary Members</a>
+                    <a href="{{ url_for('calendar') }}" class="w3-button" style="width:100%">Calendar</a>
+                    <a href="{{ url_for('alumni') }}" class="w3-button" style="width:100%">Alumni</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container" id="content">
+            
+        </div>
+
+        <script>
+            window.onresize = resize;
+            resize();
+            function resize() {
+              var navHeight;
+              if (document.getElementById("nav-small").clientHeight == 0) {
+                navHeight = document.getElementById("nav-big").clientHeight;
+              }else{
+                navHeight = document.getElementById("nav-small").clientHeight;
+              }
+              document.getElementById("content").style.marginTop = navHeight+50+"px";
+              showSize()
+            }
+        </script>
+          
+        <!-- Contact Section -->
+        <div class="w3-container w3-padding-32" id="contact">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+            <p>Lets get in touch!</p>
+            <form action="/action_page.php" target="_blank">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+                <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+                <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+                <button class="w3-button w3-black w3-section" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </form>
+        </div>
+        <!-- End page content -->
+          
+          
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-16">
+            <div class="row">
+                <div class="6u 12u(mobile)">
+                    <section>
+                        <h3 class="icon fa-home">Mailing Address</h3>
+                        <p>
+                            Elliott Hall of Music<br>
+                            712 3rd Street<br>
+                            West Lafayette, IN 47907
+                        </p>
+                    </section>
+                </div>
+                <div class="6u 12u(mobile)">
+                    <section>
+                        <h3 class="icon fa-envelope">Email</h3>
+                        <p> President Jonathan Heidegger: <br class="mobile-hide">
+                            <a href="mailto:wagne293@purdue.edu">wagne293@purdue.edu</a><br class="mobile-hide">
+                            Secretary Maxwell Smith: <br class="mobile-hide">
+                            <a href="mailto:smit3507@purdue.edu">smit3507@purdue.edu</a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+          </footer>
+    </body>
+</html>
