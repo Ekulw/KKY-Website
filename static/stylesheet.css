@@ -1,0 +1,109 @@
+/*
+html{
+    background-color: #ffc61e;
+}
+*/
+
+.showcase{
+    background: url("../static/images/who.jpg") no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.slides{
+    display:none;
+}
+
+.coa{
+    width:15%;
+    max-width:180px;
+}
+.kky-big{
+    width:50%;
+    max-width:600px
+}
+
+.bottom-margin{
+    margin-bottom:70px;
+}
+
+.value{
+    height:auto;
+}
+
+.leadership{
+    margin-left:15%;
+    width:70%;
+}
+
+.border-img{
+    border: 5px solid #09268a;
+}
+
+.cochair-left{
+    margin-left: 15%;
+    width: 35%;
+    float: left;
+    border-top: 5px solid #09268a;
+    border-left: 5px solid #09268a;
+    border-bottom: 5px solid #09268a;
+}
+
+.cochair-right{
+    width: 35%;
+    float: left;
+    border-top: 5px solid #09268a;
+    border-right: 5px solid #09268a;
+    border-bottom: 5px solid #09268a;
+}
+
+#fam-trees{
+    width: 100%;
+}
+
+#Jon-Heidegger{
+    width: 100%;
+}
+
+#nav-big{
+    display: block;
+}
+
+#nav-small{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    #nav-big{
+        display: none;
+    }
+
+    #nav-small{
+        display: block;
+    }
+}
+
+/*
+body{
+    margin-top:80px;
+}
+
+
+@media only screen and (max-width:1242px) and (min-width:917px){
+    body{
+        margin-top:114px;
+    }
+}
+
+@media only screen and (max-width:916px) and (min-width:601px){
+    body{
+        margin-top:148px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    body{
+        margin-top:250px;
+    }
+}
+*/
