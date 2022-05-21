@@ -11,12 +11,16 @@
     </head>
 
     <body>
-        
-    </body>
+        <div id="container"></div>
+        <script>
+            var link = document.querySelector('link[rel="import"]');
 
-    <script>
-        var content = document.querySelector('link[rel="import"]').import;
-        console.log(content)
-        document.body.innerHTML = content;
-    </script>
+            // Clone the <template> in the import.
+            var template = link.import.querySelector('template');
+            var clone = document.importNode(template.content, true);
+
+            document.querySelector('#container').appendChild(clone);
+        </script>
+    </body>
+    
 </html>
