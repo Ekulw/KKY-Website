@@ -6,24 +6,16 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="static/stylesheet.css">
         <link rel="icon" href="static/favicon.ico">
-        <link rel="import" href="templates/test.html">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 
     <body>
-        <div id="content">
-
-        </div>
+        <div id="nav"></div>
     </body>
 
     <script type="text/javascript">
-        
-        //$(function (){
-            $("#content").load("templates/test.html #one");
-        //});
-    
-       //console.log($("#content"));
-            
+        $("#nav").load("templates/template.html #nav-big");
+        $("#nav").load("templates/template.html #nav-small");
     </script>
 
 </html>
