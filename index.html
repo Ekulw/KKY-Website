@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Purdue Kappa Kappa Psi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="static/stylesheet.css">
+        <link rel="icon" href="static/favicon.ico">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 
     <body>
         <div id="nav"></div>
-        <p>test</p>
+
+        <div id="content">
+            <p>test</p>
+        </div>
+
+        <div id="footer"></div>
     </body>
 
     <script type="text/javascript">
         $("head").load("templates/template.html head");
         $("#nav").load("templates/template.html #nav-big, #nav-small");
-        //$("#nav").append("templates/template.html #nav-small");
+        $("#nav").load("templates/template.html #contact, footer");
+        
+        
+        window.onresize = resize;
+        resize();
+        function resize() {
+            var navHeight;
+            if (document.getElementById("nav-small").clientHeight == 0) {
+            navHeight = document.getElementById("nav-big").clientHeight;
+            }else{
+            navHeight = document.getElementById("nav-small").clientHeight;
+            }
+            document.getElementById("content").style.marginTop = navHeight+50+"px";
+        }
     </script>
 
 </html>
