@@ -19,9 +19,9 @@
         $("#nav").load("templates/template.html #nav-big, #nav-small");
         $("#footer").load("templates/template.html #contact, footer");
         
-        
+        window.onload = resize;
         window.onresize = resize;
-        resize();
+        
         function resize() {
             var navHeight;
             if (document.getElementById("nav-small").clientHeight == 0) {
