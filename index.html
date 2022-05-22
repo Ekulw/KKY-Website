@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="static/stylesheet.css">
-        <link rel="icon" href="static/favicon.ico">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 
@@ -14,8 +9,9 @@
     </body>
 
     <script type="text/javascript">
-        $("#nav").append("templates/template.html #nav-big");
-        $("#nav").append("templates/template.html #nav-small");
+        $("head").load("templates/template.html head");
+        $("#nav").load("templates/template.html #nav-big" + "templates/template.html #nav-small");
+        //$("#nav").append("templates/template.html #nav-small");
     </script>
 
 </html>
