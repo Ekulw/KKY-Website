@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Purdue Kappa Kappa Psi</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="static/stylesheet.css">
-        <link rel="icon" href="static/favicon.ico">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 
@@ -21,6 +15,7 @@
     </body>
 
     <script type="text/javascript">
+        $("head").load("templates/test.html");
         $("#nav").load("templates/template.html #nav-big, #nav-small");
         $("#footer").load("templates/template.html #contact, footer");
         
