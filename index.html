@@ -19,7 +19,9 @@
         $("#nav").load("templates/template.html #nav-big, #nav-small");
         $("#footer").load("templates/template.html #contact, footer");
         
-        window.onload = resize;
+        window.onload = function(){
+            setTimeout(resize, 100)
+        }
         window.onresize = resize;
         
         function resize() {
