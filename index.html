@@ -8,31 +8,122 @@
         <div id="nav"></div>
 
         <div id="content">
-            <p>test</p>
+            <!-- Picture Header 
+            <img src="../static/images/KKY_big.png"  style="height: 150px; display: block; margin-left: auto; margin-right: auto">
+
+            <div class="w3-content w3-section" style="width:70%">
+            <img class="slides" src="../static/images/who.jpg" style="width:100%">
+            <img class="slides" src="../static/images/juice.jpg" style="width:100%">
+            </div>
+            -->
+
+            <div class="showcase">
+                <div class="w3-container w3-center">
+                    <h1 class = "w3-center" style="color:white; font-size: 50px">KKY</h1>
+                </div>
+            </div>
+            
+            <script>
+                var images = ["../static/images/who.jpg", "../static/images/juice.jpg"];
+                var i = 0;
+            
+                $(window).resize(showSize); 
+                showSize();
+                function showSize() {
+                var img = new Image();
+                img.src = images[i]
+                var currentWidth = document.getElementsByClassName("showcase")[0].clientWidth;
+                var natHeight = img.naturalHeight;
+                var natWidth = img. naturalWidth;
+                document.getElementsByClassName("showcase")[0].style.height = currentWidth * natHeight/natWidth + "px";
+                }
+            
+                rotate();
+                function rotate() {
+                //var x = document.getElementsByClassName("showcase");
+                document.getElementsByClassName("showcase")[0].style.backgroundImage = "url("+ images[i]+")";
+                i = (i+1)%images.length;
+                setTimeout(rotate, 4000); // Change image every 4 seconds
+                }
+            </script>
+            
+            <script>
+                var index = 0;
+                carousel();
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("slides");
+                    for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                    }
+                    index++;
+                    if (index > x.length) {index = 1}    
+                    x[index-1].style.display = "block";  
+                    setTimeout(carousel, 4000); // Change image every 4 seconds
+                }
+            </script>
+            
+            <!-- About Section -->
+            <div class="w3-container w3-padding-32" id="about">
+                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+                <p>Kappa Kappa Psi is a fraternal organization that promotes the advancement of college and university bands through 
+                    dedicated service and support to the bands; comprehensive education; leadership opportunities; and recognition; 
+                    for the benefit of its members and society
+                </p>
+            </div>
+            
+            <!---Chapter Values-->
+            <div class="w3-container w3-padding-32" id="values" style="background-color: #DFDFDF;  border-top: 2px solid #09268a; border-bottom: 2px solid #09268a;">
+                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Gamma Pi Value Statement</h3>
+                <h5>The Brothers at Purdue take the mission of Kappa Kappa Psi even further with specific chapter goals</h5>
+            
+                <div style="display: flex; flex-wrap: wrap">
+                    <div class="w3-col l4 m6 value">
+                        <img src="../static/images/who.jpg" class="border-img" style="width:95%; float:left">
+                        <h3>Community</h3>
+                        <p style="width:95%">Just as Purdue Bands and Orchestras creates a family on campus, Gamma Pi fosters a sense of community and forms a 
+                            support network among brothers in our own chapter and other chapters. </p>
+                    </div>
+                
+                    <div class="w3-col l4 m6 value">
+                        <img src="../static/images/juice.jpg" class="border-img" style="width:95%; float:left">
+                        <h3>Growth</h3>
+                        <p style="width:95%">Gamma Pi provides opportunities for individuals to grow as leaders, musicians, and brothers and in doing so helps 
+                            our chapter maximize achievement and continuously strive for the highest</p>
+                    </div>
+                
+                    <div class="w3-col l4 m6 value">
+                        <img src="../static/images/march.jpg" class="border-img" style="width:95%;float:left">
+                        <h3>Initiative</h3>
+                        <p style="width:95%">Gamma Pi takes initiative by searching and finding ways to improve both chapter and the university bands and by 
+                            routinely being prepared and anticipating others’ needs.</p>
+                    </div>
+                
+                    <div class="w3-col l4 m6 value">
+                        <img src="../static/images/Ethan Rowe.jpg" class="border-img" style="width:95%; float:left">
+                        <h3>Passion</h3>
+                        <p style="width:95%">Brothers of Gamma Pi strive to balance our passions for our professional disciplines with those for music, 
+                            propel the chapter toward greater accomplishments,and instill the same attitudes within our community</p>
+                    </div>
+                
+                    <div class="w3-col l4 m6 value">
+                        <img src="../static/images/Jocie Strock.jpg" class="border-img" style="width:95%; float:left">
+                        <h3>Integrity</h3>
+                        <p style="width:95%">By closely following the purposes and ideals of Kappa Kappa Psi, Gamma Pi demonstrates integrity by serving 
+                            as role models who display consistent, honorable character</p>
+                    </div>
+                </div>
+            
+            </div>
         </div>
 
         <div id="footer"></div>
     </body>
 
+    <script src="static/script.js"></script>
+
     <script type="text/javascript">
-        $("head").load("templates/test.html");
-        $("#nav").load("templates/template.html #nav-big, #nav-small");
-        $("#footer").load("templates/template.html #contact, footer");
         
-        window.onload = function(){
-            setTimeout(resize, 100)
-        }
-        window.onresize = resize;
-        
-        function resize() {
-            var navHeight;
-            if (document.getElementById("nav-small").clientHeight == 0) {
-            navHeight = document.getElementById("nav-big").clientHeight;
-            }else{
-            navHeight = document.getElementById("nav-small").clientHeight;
-            }
-            document.getElementById("content").style.marginTop = navHeight+50+"px";
-        }
     </script>
 
 </html>

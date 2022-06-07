@@ -3,6 +3,9 @@ html{
     background-color: #ffc61e;
 }
 */
+#nav-title-small{
+    font-size: 10px;
+}
 
 .showcase{
     background: url("../static/images/who.jpg") no-repeat;
