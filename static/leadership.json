@@ -1,0 +1,39 @@
+{
+    "leadership": [
+        {
+            "position": "President",
+            "firstName": "Jonathan",
+            "lastName": "Heidegger"
+        },
+        {
+            "position": "Vice-President",
+            "firstName": "Ethan",
+            "lastName": "Brooks"
+        },
+        {
+            "position": "Vice-President-of-Membership",
+            "firstName": "Jordan",
+            "lastName": "Domasky"
+        },
+        {
+            "position": "Treasurer",
+            "firstName": "Ashley",
+            "lastName": "Kikos"
+        },
+        {
+            "position": "Secretary",
+            "firstName": "Maxwell",
+            "lastName": "Smith"
+        },
+        {
+            "position": "Historian",
+            "firstName": "Jack",
+            "lastName": "Filpi"
+        },
+        {
+            "position": "Alumni-Secretary",
+            "firstName": "Kayla",
+            "lastName": "Denklau"
+        }
+    ]
+}
