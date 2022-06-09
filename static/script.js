@@ -13,3 +13,13 @@ function resize() {
     }
     document.getElementById("content").style.marginTop = navHeight+50+"px";
 }
+
+function menu() {
+    document.getElementById("menu-dropdown").classList.toggle("w3-show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('#menu-img')) {
+        document.getElementById("menu-dropdown").classList.remove("w3-show");
+    }
+}
