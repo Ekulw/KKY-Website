@@ -8,7 +8,8 @@ html{
 }
 
 .showcase{
-    background: url("../static/images/who.jpg") no-repeat;
+    /*background: url("../static/images/who.jpg") no-repeat;*/
+    background:  no-repeat;
     background-size: contain;
     background-position: center;
 }
