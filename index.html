@@ -31,8 +31,10 @@
                 rotate();
                 
                 function showSize() {
+                    console.trace();
+                    //resize();
                     var img = new Image();
-                    img.src = images[i]
+                    img.src = images[i];
                     var currentWidth = document.getElementsByClassName("showcase")[0].clientWidth;
                     var natHeight = img.naturalHeight;
                     var natWidth = img.naturalWidth;
@@ -43,7 +45,7 @@
                     i = (i+1)%images.length;
                     var img = new Image();
                     img.onload = showSize;
-                    img.src = images[i]
+                    img.src = images[i];
                     document.getElementsByClassName("showcase")[0].style.backgroundImage = "url("+ img.src+")";
                     setTimeout(rotate, 4000); // Change image every 4 seconds
                 }
