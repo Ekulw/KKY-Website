@@ -65,25 +65,30 @@ html{
     width: 100%;
 }
 
-#life-and-honorary-col-1{
-    float: left;
-    width: 29%;
-    margin-left: 3%;
-    margin-right:1%;
+#life-and-honorary{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#life-and-honorary-col-2{
+.life-and-honorary-col-1{
     float: left;
     width: 29%;
-    margin-left: 2%;
-    margin-right:2%;
+    margin: 5px 1% 5px 3%;
+    text-align: center;
 }
 
-#life-and-honorary-col-3{
+.life-and-honorary-col-2{
     float: left;
     width: 29%;
-    margin-left: 1%;
-    margin-right: 3%;
+    margin: 5px 2% 5px 2%;
+    text-align: center;
+}
+
+.life-and-honorary-col-3{
+    float: left;
+    width: 29%;
+    margin: 5px 3% 5px 1%;
+    text-align: center;
 }
 
 #Jon-Heidegger{
