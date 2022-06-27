@@ -65,6 +65,32 @@ html{
     width: 100%;
 }
 
+#life-and-honorary{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.life-and-honorary-col-1{
+    float: left;
+    width: 29%;
+    margin: 5px 1% 5px 3%;
+    text-align: center;
+}
+
+.life-and-honorary-col-2{
+    float: left;
+    width: 29%;
+    margin: 5px 2.5% 5px 2.5%;
+    text-align: center;
+}
+
+.life-and-honorary-col-3{
+    float: left;
+    width: 29%;
+    margin: 5px 3% 5px 1%;
+    text-align: center;
+}
+
 #Jon-Heidegger{
     width: 100%;
 }
