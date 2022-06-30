@@ -6,6 +6,8 @@ window.onresize = resize;
 
 function resize() {
     var navHeight;
+    if (document.getElementById("nav-small") == null || document.getElementById("nav-big") == null)
+        return;
     if (document.getElementById("nav-small").clientHeight == 0) {
         navHeight = document.getElementById("nav-big").clientHeight;
     }else{
@@ -18,7 +20,8 @@ function menu() {
     document.getElementById("menu-dropdown").classList.toggle("w3-show");
 }
 
-window.onclick = function(event) {
+//$("body").on("click", )
+document.onclick = function(event) {
     if (!event.target.matches('#menu-img')) {
         document.getElementById("menu-dropdown").classList.remove("w3-show");
     }

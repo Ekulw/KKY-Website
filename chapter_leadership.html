@@ -28,67 +28,50 @@
                     <div id="President" class="w3-col m6 bottom-margin" >
                         <img class="leadership border-img">
                         <h2 class="leadership">President</h2>
-                        <h3 class="leadership">{{ leadership['President'] }}</h3>
-                        <p class="leadership">President Description Description Description Description Description Description Description
-                            Description Description Description Description Description
-                        </p>
+                        <h4 class="leadership"></h4>
+                        <p class="leadership"></p>
                     </div>
             
                     <div id="Vice-President" class="w3-col m6 bottom-margin">
                         <img class="leadership border-img">
                         <h2 class="leadership">Vice President</h2>
-                        <h4 class="leadership">{{ leadership['Vice President'] }}</h4>
-                        <p class="leadership">Maintains copies of chapter Bylaws and Active Requirements. Assists the President with any miscellaneous 
-                            tasks. Manages the values chairs and oversees projects and provides assistance as well as serves as a liaison between chairs and exec.
-                        </p>
+                        <h4 class="leadership"></h4>
+                        <p class="leadership"></p>
                     </div>
             
                     <div id="Vice-President-of-Membership" class="w3-col m6 bottom-margin">
                         <img class="leadership border-img">
                         <h2 class="leadership">Vice President of Membership</h2>
-                        <h4 class="leadership">{{ leadership['Vice President of Membership'] }}</h4>
-                        <p class="leadership">Oversees Growth Chairs and the recruitment process, ensuring there are at least three events as well as a freshman 
-                            mixer during band camp. Organize the interview process and help chair discussions. Lead membership candidates through the road to wisdom 
-                            to understand our values and fraternity as a whole. Ensure that 
-                        </p>
+                        <h4 class="leadership"></h4>
+                        <p class="leadership"></p>
                     </div>
             
                     <div id="Treasurer" class="w3-col m6 bottom-margin">
                         <img class="leadership border-img">
                         <h2 class="leadership">Treasurer</h2>
-                        <h4 class="leadership">{{ leadership['Treasurer'] }}</h4>
-                        <p class="leadership">Create a chapter budget for the fall and spring semester, keep a constant communication with the Student Activities and 
-                            Organizations (SAO) and Business Office for Student Organizations (BOSO), monitor chapter expenses and incomes, and aid the Fundraising Chair(s) 
-                            with any assistance they may need.
-                        </p>
+                        <h4 class="leadership"></h4>
+                        <p class="leadership"></p>
                     </div>
             
                     <div id="Secretary" class="w3-col m6 bottom-margin">
                         <img class="leadership border-img">
                         <h2 class="leadership">Secretary</h2>
-                        <h4 class="leadership">{{ leadership['Secretary'] }}</h4>
-                        <p class="leadership">Maintain the systems necessary to help the chapter run smoothly. Keep the google drive organized, create and maintain agendas 
-                            for chapter and exec meetings, update the chapter calendar with KKY events, assisting with the tracking of active requirements and chapter attendance, 
-                            and coordinate the chapter slack.
-                        </p>
+                        <h4 class="leadership"></h4>
+                        <p class="leadership"></p>
                     </div>
             
                     <div id="Historian" class="w3-col m6 bottom-margin">
                         <img class="leadership border-img">
                         <h2 class="leadership">Historian</h2>
-                        <h4 class="leadership">{{ leadership['Historian'] }}</h4>
-                        <p class="leadership">President Description Description Description Description Description Description Description
-                            Description Description Description Description Description Description Description Description Description Description Description
-                        </p>
+                        <h4 class="leadership"></h4>
+                        <p class="leadership"></p>
                     </div>
             
                     <div id="Alumni-Secretary" class="w3-col m6 bottom-margin">
                         <img class="leadership border-img">
                         <h2 class="leadership">Alumni Secretary</h2>
-                        <h4 class="leadership">{{ leadership['Alumni Secretary'] }}</h4>
-                        <p class="leadership">Correspond with alumni through periodic publications, maintain accurate records of alumni members, and assist graduating Brothers 
-                            on their road to Alumni status.
-                        </p>
+                        <h4 class="leadership"></h4>
+                        <p class="leadership"></p>
                     </div>
                 </div>
             </div>
@@ -98,77 +81,10 @@
                 <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Gamma Pi Value Chairs</h3>
             
                 <div style="display: flex; flex-wrap: wrap;">
-                    <div class="w3-col m6 bottom-margin">
-                        {% if cochairs['Service Chair'] %}
-                        <img src="../static/images/leadership images/{{ leadership['Service Chair'][0] }}.jpg" class="cochair-left">
-                        <img src="../static/images/leadership images/{{ leadership['Service Chair'][1] }}.jpg" class="cochair-right">
-                        <h2 class="leadership">Service Chairs</h2>
-                        <h3 class="leadership">{{ leadership['Service Chair'][0] }} & {{ leadership['Service Chair'][1] }}</h3>
-                        {% else %}
-                        <img src="../static/images/leadership images/{{ leadership['President'] }}.jpg" class="leadership border-img">
+                    <div id="Service" class="w3-col m6 bottom-margin">
                         <h2 class="leadership">Service Chair</h2>
-                        <h3 class="leadership">{{ leadership['Service Chair'] }}</h3>
-                        {% endif %}
-                        <p class="leadership">President Description Description Description Description Description Description Description
-                            Description Description Description Description Description
-                        </p>
-                    </div>
-            
-                    <div class="w3-col m6 bottom-margin">
-                        <img src="../static/images/leadership images/{{ leadership['Vice President'] }}.jpg" class="leadership border-img">
-                        <h2 class="leadership">Vice President</h2>
-                        <h4 class="leadership">{{ leadership['Vice President'] }}</h4>
-                        <p class="leadership">Maintains copies of chapter Bylaws and Active Requirements. Assists the President with any miscellaneous 
-                            tasks. Manages the values chairs and oversees projects and provides assistance as well as serves as a liaison between chairs and exec.
-                        </p>
-                    </div>
-            
-                    <div class="w3-col m6 bottom-margin">
-                        <img src="../static/images/leadership images/{{ leadership['Vice President of Membership'] }}.jpg" class="leadership border-img">
-                        <h2 class="leadership">Vice President of Membership</h2>
-                        <h4 class="leadership">{{ leadership['Vice President of Membership'] }}</h4>
-                        <p class="leadership">Oversees Growth Chairs and the recruitment process, ensuring there are at least three events as well as a freshman 
-                            mixer during band camp. Organize the interview process and help chair discussions. Lead membership candidates through the road to wisdom 
-                            to understand our values and fraternity as a whole. Ensure that 
-                        </p>
-                    </div>
-            
-                    <div class="w3-col m6 bottom-margin">
-                        <img src="../static/images/leadership images/{{ leadership['Treasurer'] }}.jpg" class="leadership">
-                        <h2 class="leadership">Treasurer</h2>
-                        <h4 class="leadership">{{ leadership['Treasurer'] }}</h4>
-                        <p class="leadership">Create a chapter budget for the fall and spring semester, keep a constant communication with the Student Activities and 
-                            Organizations (SAO) and Business Office for Student Organizations (BOSO), monitor chapter expenses and incomes, and aid the Fundraising Chair(s) 
-                            with any assistance they may need.
-                        </p>
-                    </div>
-            
-                    <div class="w3-col m6 bottom-margin">
-                        <img src="../static/images/leadership images/{{ leadership['Secretary'] }}.jpg" class="leadership">
-                        <h2 class="leadership">Secretary</h2>
-                        <h4 class="leadership">{{ leadership['Secretary'] }}</h4>
-                        <p class="leadership">Maintain the systems necessary to help the chapter run smoothly. Keep the google drive organized, create and maintain agendas 
-                            for chapter and exec meetings, update the chapter calendar with KKY events, assisting with the tracking of active requirements and chapter attendance, 
-                            and coordinate the chapter slack.
-                        </p>
-                    </div>
-            
-                    <div class="w3-col m6 bottom-margin">
-                        <img src="../static/images/leadership images/{{ leadership['Historian'] }}.jpg" class="leadership">
-                        <h2 class="leadership">Historian</h2>
-                        <h4 class="leadership">{{ leadership['Historian'] }}</h4>
-                        <p class="leadership">President Description Description Description Description Description Description Description
-                            Description Description Description Description Description Description Description Description Description Description Description
-                        </p>
-                    </div>
-            
-                    <div class="w3-col m6 bottom-margin">
-                        <img src="../static/images/leadership images/{{ leadership['Alumni Secretary'] }}.jpg" class="leadership">
-                        <h2 class="leadership">Alumni Secretary</h2>
-                        <h4 class="leadership">{{ leadership['Alumni Secretary'] }}</h4>
-                        <p class="leadership">Correspond with alumni through periodic publications, maintain accurate records of alumni members, and assist graduating Brothers 
-                            on their road to Alumni status.
-                        </p>
+                        <h4 class="leadership"></h4>
+                        <p class="leadership"></p>
                     </div>
                 </div>
             </div>
@@ -187,9 +103,33 @@
 			.then(json => getLeadership(json));
 
 		function getLeadership(json) {
-            for (let i = 0; i < json.leadership.length; i++) {
-                element = json.leadership[i];
-                $("#"+element.position+" img").attr("src", "static/images/leadership images/"+element.firstName+" "+element.lastName+".jpg")
+            for (let i = 0; i < json.exec.length; i++) {
+                var element = json.exec[i];
+                $("#"+element.position+" img").attr("src", "static/images/leadership images/"+element.name+".jpg");
+                $("#"+element.position+" h4").text(element.name);
+                $("#"+element.position+" p").text(element.description);
+            }
+
+            for (let i = 0; i < json.chairs.length; i++) {
+                var element = json.chairs[i];
+                if (element.name.length < 2) {
+                    var img = document.createElement("img");
+                    img.setAttribute("src", "static/images/leadership images/"+element.name[0]+".jpg");
+                    img.classList.add("leadership", "border-img");
+                    $("#"+element.position).prepend(img);
+                    $("#"+element.position+" h4").text(element.name[0]);
+                } else {
+                    var img1 = document.createElement("img");
+                    img1.setAttribute("src", "static/images/leadership images/"+element.name[0]+".jpg");
+                    img1.classList.add("cochair-left");
+                    var img2 = document.createElement("img");
+                    img2.setAttribute("src", "static/images/leadership images/"+element.name[1]+".jpg");
+                    img2.classList.add("cochair-right");
+                    $("#"+element.position).prepend(img2);
+                    $("#"+element.position).prepend(img1);
+                    $("#"+element.position+" h4").text(element.name[0]+" and "+element.name[1]);
+                }
+                $("#"+element.position+" p").text(element.description);
             }           
         }
     </script>

@@ -1,39 +1,49 @@
 {
-    "leadership": [
+    "exec": [
         {
             "position": "President",
-            "firstName": "Jonathan",
-            "lastName": "Heidegger"
+            "name": "Jonathan Heidegger",
+            "description": "President test Description Description Description Description Description Description Description Description Description Description Description Description"
         },
         {
             "position": "Vice-President",
-            "firstName": "Ethan",
-            "lastName": "Brooks"
+            "name": "Ethan Brooks",
+            "description": "Maintains copies of chapter Bylaws and Active Requirements. Assists the President with any miscellaneous tasks. Manages the values chairs and oversees projects and provides assistance as well as serves as a liaison between chairs and exec."
         },
         {
             "position": "Vice-President-of-Membership",
-            "firstName": "Jordan",
-            "lastName": "Domasky"
+            "name": "Jordan Domasky",
+            "description": "Oversees Growth Chairs and the recruitment process, ensuring there are at least three events as well as a freshman mixer during band camp. Organize the interview process and help chair discussions. Lead membership candidates through the road to wisdom to understand our values and fraternity as a whole. Ensure that"
         },
         {
             "position": "Treasurer",
-            "firstName": "Ashley",
-            "lastName": "Kikos"
+            "name": "Ashley Kikos",
+            "description": "Create a chapter budget for the fall and spring semester, keep a constant communication with the Student Activities and Organizations (SAO) and Business Office for Student Organizations (BOSO), monitor chapter expenses and incomes, and aid the Fundraising Chair(s) with any assistance they may need."
         },
         {
             "position": "Secretary",
-            "firstName": "Maxwell",
-            "lastName": "Smith"
+            "name": "Maxwell Smith",
+            "description": "Maintain the systems necessary to help the chapter run smoothly. Keep the google drive organized, create and maintain agendas for chapter and exec meetings, update the chapter calendar with KKY events, assisting with the tracking of active requirements and chapter attendance, and coordinate the chapter slack."
         },
         {
             "position": "Historian",
-            "firstName": "Jack",
-            "lastName": "Filpi"
+            "name": "Jack Filpi",
+            "description": "President Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description"
+
         },
         {
             "position": "Alumni-Secretary",
-            "firstName": "Kayla",
-            "lastName": "Denklau"
+            "name": "Kayla Denklau",
+            "description": "Correspond with alumni through periodic publications, maintain accurate records of alumni members, and assist graduating Brothers on their road to Alumni status."
+
+        }
+    ],
+
+    "chairs": [
+        {
+            "position": "Service",
+            "name": ["Jacob Descoteau", "Matthew Heath"],
+            "description": "Correspond with alumni through periodic publications, maintain accurate records of alumni members, and assist graduating Brothers on their road to Alumni status."
         }
     ]
 }
