@@ -82,7 +82,8 @@
             
                 <div style="display: flex; flex-wrap: wrap;">
                     <div id="Service" class="w3-col m6 bottom-margin">
-                        <h2 class="leadership">Service Chair</h2>
+                        <div style="display: flex;"></div>
+                        <h2 class="leadership"></h2>
                         <h4 class="leadership"></h4>
                         <p class="leadership"></p>
                     </div>
@@ -116,7 +117,8 @@
                     var img = document.createElement("img");
                     img.setAttribute("src", "static/images/leadership images/"+element.name[0]+".jpg");
                     img.classList.add("leadership", "border-img");
-                    $("#"+element.position).prepend(img);
+                    $("#"+element.position+" div").append(img);
+                    $('#'+element.position+" h2").text(element.position+" Chair");
                     $("#"+element.position+" h4").text(element.name[0]);
                 } else {
                     var img1 = document.createElement("img");
@@ -125,8 +127,9 @@
                     var img2 = document.createElement("img");
                     img2.setAttribute("src", "static/images/leadership images/"+element.name[1]+".jpg");
                     img2.classList.add("cochair-right");
-                    $("#"+element.position).prepend(img2);
-                    $("#"+element.position).prepend(img1);
+                    $("#"+element.position+" div").append(img1);
+                    $("#"+element.position+" div").append(img2);
+                    $('#'+element.position+" h2").text(element.position+" Chairs");
                     $("#"+element.position+" h4").text(element.name[0]+" and "+element.name[1]);
                 }
                 $("#"+element.position+" p").text(element.description);
