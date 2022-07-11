@@ -20,7 +20,6 @@ function menu() {
     document.getElementById("menu-dropdown").classList.toggle("w3-show");
 }
 
-//$("body").on("click", )
 document.onclick = function(event) {
     if (!event.target.matches('#menu-img') && !event.target.matches('#menu-dropdown')) {
         document.getElementById("menu-dropdown").classList.remove("w3-show");
