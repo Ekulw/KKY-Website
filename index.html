@@ -95,7 +95,7 @@
                     //resize();
                     var img = new Image();
                     img.src = images[i];
-                    var currentWidth = document.getElementsById("showcase")[0].clientWidth;
+                    var currentWidth = document.getElementsById("showcase").clientWidth;
                     var natHeight = img.naturalHeight;
                     var natWidth = img.naturalWidth;
                     document.getElementById("showcase").style.height = currentWidth * natHeight/natWidth + "px";
