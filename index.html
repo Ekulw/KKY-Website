@@ -95,10 +95,10 @@
                     //resize();
                     var img = new Image();
                     img.src = images[i];
-                    var currentWidth = document.getElementsByClassName("showcase")[0].clientWidth;
+                    var currentWidth = document.getElementsById("showcase")[0].clientWidth;
                     var natHeight = img.naturalHeight;
                     var natWidth = img.naturalWidth;
-                    document.getElementsByClassName("showcase")[0].style.height = currentWidth * natHeight/natWidth + "px";
+                    document.getElementById("showcase").style.height = currentWidth * natHeight/natWidth + "px";
                 }
             
                 function rotate() {
@@ -106,7 +106,7 @@
                     var img = new Image();
                     img.onload = showSize;
                     img.src = images[i];
-                    document.getElementsByClassName("showcase")[0].style.backgroundImage = "url("+ img.src+")";
+                    document.getElementById("showcase").style.backgroundImage = "url("+ img.src+")";
                     setTimeout(rotate, 4000); // Change image every 4 seconds
                 }
         </script>
