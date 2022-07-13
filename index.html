@@ -17,57 +17,11 @@
             </div>
             -->
 
-            <div class="showcase" style="width: 100%;">
+            <div id="showcase" style="width: 100%;">
                 <div class="w3-container w3-center">
                     <h1 class = "w3-center" style="color:white; font-size: 50px">KKY</h1>
                 </div>
             </div>
-            
-            <script>
-                var images = ["static/images/who.jpg", "static/images/juice.jpg", "static/images/KKY_big.png"];
-                var i = -1;
-            
-                $(window).resize(showSize);
-                rotate();
-                
-                function showSize() {
-                    //console.trace();
-                    //resize();
-                    var img = new Image();
-                    img.src = images[i];
-                    var currentWidth = document.getElementsByClassName("showcase")[0].clientWidth;
-                    var natHeight = img.naturalHeight;
-                    var natWidth = img.naturalWidth;
-                    document.getElementsByClassName("showcase")[0].style.height = currentWidth * natHeight/natWidth + "px";
-                }
-            
-                function rotate() {
-                    i = (i+1)%images.length;
-                    var img = new Image();
-                    img.onload = showSize;
-                    img.src = images[i];
-                    document.getElementsByClassName("showcase")[0].style.backgroundImage = "url("+ img.src+")";
-                    setTimeout(rotate, 4000); // Change image every 4 seconds
-                }
-            </script>
-            
-            <script>
-                /*
-                var index = 0;
-                carousel();
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("slides");
-                    for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                    }
-                    index++;
-                    if (index > x.length) {index = 1}    
-                    x[index-1].style.display = "block";  
-                    setTimeout(carousel, 4000); // Change image every 4 seconds
-                }
-                */
-            </script>
             
             <!-- About Section -->
             <div class="w3-container w3-padding-32" id="about">
@@ -128,8 +82,51 @@
 
     <script src="static/script.js"></script>
 
-    <script type="text/javascript">
-        
-    </script>
+    <script>
+                var images = ["static/images/who.jpg", "static/images/juice.jpg", "static/images/KKY_big.png"];
+                var i = -1;
+            
+                $(window).resize(showSize);
+                document.getElementById("showcase").onload = showsize;
+                rotate();
+                
+                function showSize() {
+                    //console.trace();
+                    //resize();
+                    var img = new Image();
+                    img.src = images[i];
+                    var currentWidth = document.getElementsByClassName("showcase")[0].clientWidth;
+                    var natHeight = img.naturalHeight;
+                    var natWidth = img.naturalWidth;
+                    document.getElementsByClassName("showcase")[0].style.height = currentWidth * natHeight/natWidth + "px";
+                }
+            
+                function rotate() {
+                    i = (i+1)%images.length;
+                    var img = new Image();
+                    img.onload = showSize;
+                    img.src = images[i];
+                    document.getElementsByClassName("showcase")[0].style.backgroundImage = "url("+ img.src+")";
+                    setTimeout(rotate, 4000); // Change image every 4 seconds
+                }
+        </script>
+            
+            <script>
+                /*
+                var index = 0;
+                carousel();
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("slides");
+                    for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                    }
+                    index++;
+                    if (index > x.length) {index = 1}    
+                    x[index-1].style.display = "block";  
+                    setTimeout(carousel, 4000); // Change image every 4 seconds
+                }
+                */
+            </script>
 
 </html>
