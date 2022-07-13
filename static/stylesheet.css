@@ -38,7 +38,7 @@ html{
     }
 }
 
-.showcase {
+#showcase {
     /*background: url("../static/images/who.jpg") no-repeat;*/
     background:  no-repeat;
     background-size: contain;
