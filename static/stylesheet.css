@@ -38,8 +38,8 @@ html{
     }
 }
 
-#showcase {
-    /*background: url("../static/images/who.jpg") no-repeat;*/
+/*#showcase {
+    /*background: url("../static/images/who.jpg") no-repeat;
     background:  no-repeat;
     background-size: contain;
     background-position: center;
@@ -47,8 +47,41 @@ html{
 
 .slides{
     display:none;
+}*/
+
+#showcase {
+    position: relative;
+    width: 100%;
 }
 
+#slides {
+    width: 100%;
+}
+
+#showcase-text-bg{
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #DFDFDF;
+    opacity: 0.6;
+    border: 5px solid #09268a;
+}
+
+#showcase-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #09268a;
+    font-size: 4vw;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 .coa{
     width:15%;
     max-width:180px;

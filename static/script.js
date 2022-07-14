@@ -21,7 +21,7 @@ function resize() {
         console.log("case 3");
         console.trace();
     }
-    document.getElementById("content").style.marginTop = navHeight+50+"px";
+    document.getElementById("content").style.marginTop = navHeight+"px";
 }
 
 function menu() {
