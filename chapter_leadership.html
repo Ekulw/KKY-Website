@@ -15,15 +15,15 @@
                 <img src="static/images/KKY_big.png" class="kky-big">
                 </span>
             </div>
-        
+
             <div class="w3-container w3-padding-32">
                 <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-center" style="color:#09268a;">Gamma Pi Leadership</h1>
             </div>
-            
+
             <!---Exec-->
             <div class="w3-container w3-padding-32" id="values" style="background-color: #DFDFDF;  border-top: 2px solid #09268a; border-bottom: 2px solid #09268a; margin-bottom: 50px;">
                 <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Gamma Pi Executive Board</h3>
-            
+
                 <div style="display: flex; flex-wrap: wrap;">
                     <div id="President" class="w3-col m6 bottom-margin" >
                         <img class="leadership border-img">
@@ -31,42 +31,42 @@
                         <h4 class="leadership"></h4>
                         <p class="leadership"></p>
                     </div>
-            
+
                     <div id="Vice-President" class="w3-col m6 bottom-margin">
                         <img class="leadership border-img">
                         <h2 class="leadership">Vice President</h2>
                         <h4 class="leadership"></h4>
                         <p class="leadership"></p>
                     </div>
-            
+
                     <div id="Vice-President-of-Membership" class="w3-col m6 bottom-margin">
                         <img class="leadership border-img">
                         <h2 class="leadership">Vice President of Membership</h2>
                         <h4 class="leadership"></h4>
                         <p class="leadership"></p>
                     </div>
-            
+
                     <div id="Treasurer" class="w3-col m6 bottom-margin">
                         <img class="leadership border-img">
                         <h2 class="leadership">Treasurer</h2>
                         <h4 class="leadership"></h4>
                         <p class="leadership"></p>
                     </div>
-            
+
                     <div id="Secretary" class="w3-col m6 bottom-margin">
                         <img class="leadership border-img">
                         <h2 class="leadership">Secretary</h2>
                         <h4 class="leadership"></h4>
                         <p class="leadership"></p>
                     </div>
-            
+
                     <div id="Historian" class="w3-col m6 bottom-margin">
                         <img class="leadership border-img">
                         <h2 class="leadership">Historian</h2>
                         <h4 class="leadership"></h4>
                         <p class="leadership"></p>
                     </div>
-            
+
                     <div id="Alumni-Secretary" class="w3-col m6 bottom-margin">
                         <img class="leadership border-img">
                         <h2 class="leadership">Alumni Secretary</h2>
@@ -75,13 +75,62 @@
                     </div>
                 </div>
             </div>
-        
+
             <!---Chairs-->
             <div class="w3-container w3-padding-32" id="values" style="background-color: #DFDFDF;  border-top: 2px solid #09268a; border-bottom: 2px solid #09268a;">
                 <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Gamma Pi Value Chairs</h3>
-            
+
                 <div style="display: flex; flex-wrap: wrap;">
                     <div id="Service" class="w3-col m6 bottom-margin">
+                        <div style="display: flex;"></div>
+                        <h2 class="leadership"></h2>
+                        <h4 class="leadership"></h4>
+                        <p class="leadership"></p>
+                    </div>
+
+                    <div id="Community" class="w3-col m6 bottom-margin">
+                        <div style="display: flex;"></div>
+                        <h2 class="leadership"></h2>
+                        <h4 class="leadership"></h4>
+                        <p class="leadership"></p>
+                    </div>
+
+                    <div id="Music" class="w3-col m6 bottom-margin">
+                        <div style="display: flex;"></div>
+                        <h2 class="leadership"></h2>
+                        <h4 class="leadership"></h4>
+                        <p class="leadership"></p>
+                    </div>
+
+                    <div id="Traditions" class="w3-col m6 bottom-margin">
+                        <div style="display: flex;"></div>
+                        <h2 class="leadership"></h2>
+                        <h4 class="leadership"></h4>
+                        <p class="leadership"></p>
+                    </div>
+
+                    <div id="Growth" class="w3-col m6 bottom-margin">
+                        <div style="display: flex;"></div>
+                        <h2 class="leadership"></h2>
+                        <h4 class="leadership"></h4>
+                        <p class="leadership"></p>
+                    </div>
+
+                    <div id="Fundraising" class="w3-col m6 bottom-margin">
+                        <div style="display: flex;"></div>
+                        <h2 class="leadership"></h2>
+                        <h4 class="leadership"></h4>
+                        <p class="leadership"></p>
+                    </div>
+
+                    <div id="Publicity" class="w3-col m6 bottom-margin">
+                        <div style="display: flex;"></div>
+                        <h2 class="leadership"></h2>
+                        <h4 class="leadership"></h4>
+                        <p class="leadership"></p>
+                    </div>
+
+                    <div id="Technology" class="w3-col m6 bottom-margin">
                         <div style="display: flex;"></div>
                         <h2 class="leadership"></h2>
                         <h4 class="leadership"></h4>
@@ -97,7 +146,7 @@
     <script src="static/script.js"></script>
 
     <script type="text/javascript">
-        fetch('static/leadership.json', { 
+        fetch('static/leadership.json', {
 			  method: 'GET'
 			})
 			.then(response => response.json())
@@ -133,7 +182,7 @@
                     $("#"+element.position+" h4").text(element.name[0]+" and "+element.name[1]);
                 }
                 $("#"+element.position+" p").text(element.description);
-            }           
+            }
         }
     </script>
 
