@@ -266,6 +266,19 @@ article p {
     width: 100%;
 }
 
+.dart-button {
+    font-size: min(20px, max(8.5px, 2vw));
+    background-color: #09268a;
+    color: white;
+}
+
+.dart {
+    width: 100%;
+    max-width: 840px;
+    height: 600px;
+    margin: auto;
+}
+
 .footer-section {
     margin-left: 5%;
     width: 90%;
