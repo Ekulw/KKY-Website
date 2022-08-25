@@ -37,15 +37,6 @@
     <script src="static/script.js"></script>
 
     <script type="text/javascript">
-        //resizeIframe(document.getElementById("dart-current"));
-        var cur = document.getElementById("dart-current");
-        console.log(cur.scrollHeight)
-
-
-        function resizeIframe(obj) {
-            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-        }
-
         function current() {
             document.getElementById("dart-current").classList.add("w3-show");
             document.getElementById("dart-current").classList.remove("w3-hide");

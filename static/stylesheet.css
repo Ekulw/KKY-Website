@@ -206,13 +206,30 @@ article p {
     border-bottom: 2px solid #ffc61e;
 }
 
-.leadership{
+.leader-section {
+    border-bottom: 2px solid #ffc61e;
+}
+
+.leadership {
     margin-left:15%;
     width:70%;
 }
 
+.leadership img{
+    width: 100%;
+}
+
 .border-img{
     border: 5px solid #09268a;
+}
+
+.chair-img {
+    display: flex;
+}
+
+.single-chair {
+    margin-left: 15%;
+    width: 70%;
 }
 
 .cochair-left{
@@ -234,6 +251,22 @@ article p {
 
 #fam-trees{
     width: 100%;
+}
+
+#life-and-honorary-header {
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    font-size: max(18px,2.5vw);
+}
+
+@media only screen and (max-width:600px) {
+    #life-and-honorary-header {
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+        font-size: max(18px,2.5vw);
+    }
 }
 
 #life-and-honorary{
