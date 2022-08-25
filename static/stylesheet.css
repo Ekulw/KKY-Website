@@ -227,11 +227,6 @@ article p {
     display: flex;
 }
 
-.single-chair {
-    margin-left: 15%;
-    width: 70%;
-}
-
 .cochair-left{
     margin-left: 15%;
     width: 35%;
@@ -247,6 +242,22 @@ article p {
     border-top: 5px solid #09268a;
     border-right: 5px solid #09268a;
     border-bottom: 5px solid #09268a;
+}
+
+@media only screen and (max-width:600px) {
+    .leadership {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .cochair-left {
+        margin-left: 5%;
+        width: 45%;
+    }
+
+    .cochair-right {
+        width: 45%;
+    }
 }
 
 #fam-trees{
