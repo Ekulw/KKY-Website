@@ -29,12 +29,15 @@ document.onclick = function(event) {
     }
 }
 
-/*fetch('static/leadership.json', { 
+fetch('static/leadership.json', { 
     method: 'GET'
   })
   .then(response => response.json())
   .then(json => getEmails(json));
 
 function getEmails(json) {
-  
-}*/
+    var president = json.exec[0];
+    var secretary = json.exec[4];
+    document.getElementById("president-footer").innerHTML = president.position+" "+president.name+": <br><a href=\"mailto:"+president.email+"\">"+president.email+"</a><br>";
+    document.getElementById("secretary-footer").innerHTML = secretary.position+" "+secretary.name+": <br><a href=\"mailto:"+secretary.email+"\">"+secretary.email+"</a><br>";
+}
